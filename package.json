@@ -29,7 +29,8 @@
     "charts",
     "sparklines",
     "visualization",
-    "jsx"
+    "jsx",
+    "typescript"
   ],
   "authors": [
     "Bart Riepe <bart@serial-experiments.com>",

@@ -13,17 +13,17 @@ Live demos and docs: [aeolun.github.io/react-sparklines-ts/](https://aeolun.gith
 
 ```bash
 # pnpm
-pnpm add react-sparklines
+pnpm add react-sparklines-ts
 ```
 
 ```bash
 # yarn
-yarn add react-sparklines
+yarn add react-sparklines-ts
 ```
 
 ```bash
 # npm
-npm install react-sparklines --save
+npm install react-sparklines-ts --save
 ```
 
 ## Run demo
@@ -70,7 +70,7 @@ Sparklines component is a container with the following properties:
 
 ```
 import React from 'react';
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { Sparklines, SparklinesLine } from 'react-sparklines-ts';
 ...
 <Sparklines data={[5, 10, 5, 20]}>
   <SparklinesLine color="blue" />
@@ -83,7 +83,7 @@ import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 ```
 import React from 'react';
-import { Sparklines, SparklinesBars } from 'react-sparklines';
+import { Sparklines, SparklinesBars } from 'react-sparklines-ts';
 ...
 <Sparklines data={[5, 10, 5, 20]}>
   <SparklinesBars />
@@ -96,7 +96,7 @@ import { Sparklines, SparklinesBars } from 'react-sparklines';
 
 ```
 import React from 'react';
-import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines-ts';
 ...
 <Sparklines data={sampleData}>
     <SparklinesLine style={{ fill: "none" }} />
@@ -110,7 +110,7 @@ import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines';
 
 ```
 import React from 'react';
-import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-sparklines-ts';
 ...
 <Sparklines data={sampleData}>
     <SparklinesLine />
@@ -124,7 +124,7 @@ import { Sparklines, SparklinesLine, SparklinesReferenceLine } from 'react-spark
 
 ```
 import React from 'react';
-import { Sparklines, SparklinesLine, SparklinesNormalBand } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesNormalBand } from 'react-sparklines-ts';
 ...
 <Sparklines data={sampleData}>
     <SparklinesLine style={{ fill: "none" }}/>
