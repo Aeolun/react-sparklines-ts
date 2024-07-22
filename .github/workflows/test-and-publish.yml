@@ -29,6 +29,8 @@ jobs:
           endpoint: https://mycoverage.se1.serial-experiments.com
   release:
     runs-on: ubuntu-latest
+    needs:
+      - test
     if: github.ref == 'refs/heads/main'
     env:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
