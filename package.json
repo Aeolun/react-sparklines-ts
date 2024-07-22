@@ -1,6 +1,6 @@
 {
   "name": "react-sparklines-ts",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Beautiful and expressive Sparklines component for React (continued)",
   "type": "module",
   "module": "dist/index.js",
