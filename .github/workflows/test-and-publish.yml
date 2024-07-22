@@ -1,13 +1,9 @@
 on:
   push:
-    branches:
-      - main
 
 jobs:
-  release:
+  test:
     runs-on: ubuntu-latest
-    env:
-      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -31,6 +27,26 @@ jobs:
         uses: serialexp/mycoverage-action@v2
         with:
           endpoint: https://mycoverage.se1.serial-experiments.com
+  release:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+      - name: Set up node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - name: Install the dependancies
+        run: pnpm install
+      - name: Build the project
+        run: pnpm run build
       - name: Login to npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
       - name: Set github name
