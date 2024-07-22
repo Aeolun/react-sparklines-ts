@@ -5,9 +5,9 @@ export default defineConfig({
     coverage: {
       enabled: true,
       all: true,
-      exclude: ["demo/**"],
+      include: ["src/**"],
       provider: "istanbul",
-      reporter: ["text-summary", "lcov"],
+      reporter: ["text", "lcov"],
     },
   },
 });
