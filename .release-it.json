@@ -2,7 +2,8 @@
   "git": {
     "requireBranch": "main",
     "commitMessage": "chore: release v${version}",
-    "requireCleanWorkingDir": false
+    "requireCleanWorkingDir": false,
+    "commitArgs": ["--no-verify"]
   },
   "github": {
     "release": true
