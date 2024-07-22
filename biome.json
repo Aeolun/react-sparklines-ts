@@ -1,0 +1,19 @@
+{
+  "linter": {
+    "rules": {
+      "a11y": {
+        "useKeyWithClickEvents": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "off"
+      }
+    }
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "indentWidth": 2
+  },
+  "files": {
+    "ignore": ["coverage/**", "dist/**"]
+  }
+}

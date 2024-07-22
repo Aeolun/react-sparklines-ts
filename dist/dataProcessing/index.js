@@ -1,0 +1,10 @@
+export * from "./min";
+export * from "./max";
+export * from "./min";
+export * from "./mean";
+export * from "./mean";
+export * from "./midRange";
+export * from "./median";
+export * from "./stdev";
+export * from "./variance";
+export { mean as avg } from "./mean";
