@@ -3,11 +3,9 @@
   "version": "1.8.5",
   "description": "Beautiful and expressive Sparklines component for React (continued)",
   "type": "module",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "directories": {
-    "src": "src/"
-  },
+  "module": "dist/Sparklines.js",
+  "types": "dist/Sparklines.d.ts",
+  "files": ["dist"],
   "scripts": {
     "start": "vite",
     "test": "vitest",
