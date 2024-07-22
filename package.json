@@ -4,6 +4,7 @@
   "description": "Beautiful and expressive Sparklines component for React (continued)",
   "type": "module",
   "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "directories": {
     "src": "src/"
   },
