@@ -33,5 +33,7 @@ jobs:
           endpoint: https://mycoverage.se1.serial-experiments.com
       - name: Login to npm
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      - name: Set github name
+        run: git config --global user.name "github-actions[bot]" && git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - name: Publish the project
         run: pnpm run release
