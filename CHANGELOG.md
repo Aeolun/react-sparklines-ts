@@ -1,5 +1,12 @@
 
 
+## 1.8.7 (2024-11-28)
+
+
+### Bug Fixes
+
+* import issue when using @vitest/plugin-istanbul ([6d1742d](https://github.com/aeolun/react-sparklines-ts/commit/6d1742dd78c9e5f0035a559262ad4ee665865d10))
+
 ## 1.8.5 (2024-07-22)
 
 ## 1.8.4 (2024-07-22)

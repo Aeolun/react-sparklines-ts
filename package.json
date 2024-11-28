@@ -1,12 +1,14 @@
 {
   "name": "react-sparklines-ts",
-  "version": "1.8.6",
+  "version": "1.8.7",
   "description": "Beautiful and expressive Sparklines component for React (continued)",
   "type": "module",
   "main": "dist/Sparklines.js",
   "module": "dist/Sparklines.js",
   "types": "dist/Sparklines.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "vite",
     "test": "vitest",
